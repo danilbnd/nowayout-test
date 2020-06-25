@@ -1,0 +1,129 @@
+.ba-product {
+  display: flex;
+  justify-content: center;
+  @media screen and (max-width: 768px) {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  &__list {
+    padding-right: 10px;
+    list-style: none;
+    width: 20%;
+    height: 100%;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      padding-top: 10px;
+    }
+  }
+
+  &__item {
+    padding-top: 600px;
+    padding-left: 40px;
+    color: $light-gray;
+
+
+    h3 {
+      text-align: left;
+      font-size: 36px;
+      font-weight: 500;
+      line-height: 36px;
+      margin-bottom: 40px;
+      padding-right: 10px;
+    }
+
+    .ba-product__title {
+      margin-bottom: 72px;
+    }
+
+    p {
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 24px;
+      margin-bottom: 52px;
+
+    }
+
+    p span {
+      padding-left: 20px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 50px;
+  }
+}
+
+.ba-title {
+  white-space: pre-line;
+}
+
+.igm1 {
+  background: url(../img/img1.jpg) 50% no-repeat;
+}
+
+.igm2 {
+  background: url(../img/img2.jpg) 50% no-repeat;
+}
+
+.igm3 {
+  background: url(../img/img3.jpg) 50% no-repeat;
+  border: 0.3px solid $red;
+}
+
+.igm4 {
+  background: url(../img/img4.jpg) 50% no-repeat;
+}
+
+.igm5 {
+  background: url(../img/img5.jpg) 50% no-repeat;
+}
+
+.ba-gradient {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 52.74%, rgba(17, 13, 13, 0.9) 100%);
+  width: 105%;
+  height: 780px;
+  position: relative;
+}
+
+.ba-sale {
+  background: url(../img/tape.png) 50% no-repeat;
+  z-index: 2;
+  position: absolute;
+  bottom: 320px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $light-gray;
+  height: 100%;
+  font-weight: 500;
+
+  h4 {
+    padding: 20px 0 0 20px;
+    font-family: 'Morganite';
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 56px;
+    text-transform: uppercase;
+  }
+
+  &__limited {
+    padding-right: 10px;
+    text-align: right;
+  }
+
+  &__text {
+    margin: 0;
+    font-weight: 300;
+  }
+
+  &__time {
+    font-size: 18px;
+    font-weight: 900;
+  }
+}
+
+.ba-sale__text {
+
+}
